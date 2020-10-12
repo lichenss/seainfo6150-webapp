@@ -20,7 +20,7 @@ const JsFundamentalsDataFetching = () => {
 
   let displayContent;
 
-  if (fetchedData.length) {
+  if (1) {
     displayContent = (
       <ul>
         {fetchedData.map((item) => (
