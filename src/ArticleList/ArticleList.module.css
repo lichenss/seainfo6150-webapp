@@ -1,0 +1,19 @@
+ul{
+    background-color: rgb(138, 138, 138);
+    border: 1.5px dashed dimgray;
+    border-radius: 15px;
+    margin: 4%;
+    list-style-type:none;
+    box-shadow: -2px -2px 8px 8px rgb(240, 161, 161);
+}
+li{
+    background: linear-gradient(to right,rgb(170, 53, 53),rgb(235, 232, 232) 13%);
+    width: 96%;
+    border: 2px solid rgb(182, 36, 36);
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    box-shadow: 6px 10px 8px rgb(102, 102, 102);
+}

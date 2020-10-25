@@ -1,0 +1,11 @@
+button {
+    color: white;
+    font-size: small;
+    height: 2rem;
+    width: 6rem;
+    margin-top: 20px;
+    background-color: rgb(194, 5, 5);
+    float: left;
+    box-shadow: inset -1px -1px 5px rgb(43, 41, 41);
+    border-radius: 6px;
+}

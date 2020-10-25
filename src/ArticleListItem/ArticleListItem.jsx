@@ -1,15 +1,25 @@
-import React from "react";
+import React, {useState}from "react";
 import PropTypes from "prop-types";
+import ArticleTextToggleButton from "../ArticleTextToggleButton/ArticleTextToggleButton"
+import "./ArticleListItem.module.css"
 
 const ArticleListItem = (props) => {
+  const [show, setShow] = useState(false);
+  const onClick = () =>{
+    setShow(!show)
+  }
+  
   return (
-    <article>
-      <header>
-        <h1>{props.article.title}</h1>
+    <div>
+      <h2>{props.article.title}</h2>
+      {show ? (
+        <div className="articleContent">
+        <p>{props.article.shortText}</p>
         <time datetime={props.article.timeStamp}>{props.article.displayDate} </time>
-      </header>
-      <p>{props.article.shortText}</p>
-    </article>
+        </div>
+        ) : <div />}
+      <ArticleTextToggleButton buttonText={show?"Show less":"Show more"} onClick={onClick}/>
+    </div>
   );
 };
 ArticleListItem.propTypes = {
