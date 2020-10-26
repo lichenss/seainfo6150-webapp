@@ -13,7 +13,7 @@ const ArticleListItem = (props) => {
     <div>
       <h2>{props.article.title}</h2>
       {show ? (
-        <div className="articleContent">
+        <div>
         <p>{props.article.shortText}</p>
         <time datetime={props.article.timeStamp}>{props.article.displayDate} </time>
         </div>
